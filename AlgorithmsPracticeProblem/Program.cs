@@ -14,6 +14,8 @@ namespace AlgorithmsPracticeProblem
             Console.WriteLine("1.Insertion Sort");
             Console.WriteLine("2.Bubble Sort");
             Console.WriteLine("3.Prime Number");
+            Console.WriteLine("4.Anagram");
+
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -29,10 +31,13 @@ namespace AlgorithmsPracticeProblem
                     PrimeNumber prime = new PrimeNumber();
                     prime.PrimeNum(0,1000);
                     break;
-
+                case 4:
+                    Anagram objj = new Anagram();
+                    objj.Check();
+                    break;
 
 
             }
-        }
+}
     }
 }
