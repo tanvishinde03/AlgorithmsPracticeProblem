@@ -12,6 +12,7 @@ namespace AlgorithmsPracticeProblem
         {
             Console.WriteLine("Enter Option");
             Console.WriteLine("1.Insertion Sort");
+            Console.WriteLine("2.Bubble Sort");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -19,7 +20,10 @@ namespace AlgorithmsPracticeProblem
                     InsertionSort sort = new InsertionSort();
                     sort.Sort();
                     break;
-
+                case 2:
+                    BubbleSort obj = new BubbleSort();
+                    obj.BubbleSorting();
+                    break;
 
 
 
