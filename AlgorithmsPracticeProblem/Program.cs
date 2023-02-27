@@ -13,6 +13,7 @@ namespace AlgorithmsPracticeProblem
             Console.WriteLine("Enter Option");
             Console.WriteLine("1.Insertion Sort");
             Console.WriteLine("2.Bubble Sort");
+            Console.WriteLine("3.Prime Number");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -24,7 +25,10 @@ namespace AlgorithmsPracticeProblem
                     BubbleSort obj = new BubbleSort();
                     obj.BubbleSorting();
                     break;
-
+                case 3:
+                    PrimeNumber prime = new PrimeNumber();
+                    prime.PrimeNum(0,1000);
+                    break;
 
 
 
